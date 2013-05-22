@@ -6,13 +6,36 @@
  * Nib provides a CSS reset
  */
 /*
- * Store the main color and
- * background color as variables
+ * Colors
  */
+h1 {
+  font-weight: normal;
+  margin: 0px 0px 30px 0px;
+}
+h1 span {
+  font-size: 30px;
+}
+h2 {
+  font-weight: normal;
+  clear: both;
+}
+p {
+  white-space: pre;
+}
+a {
+  color: #a65555;
+}
+a:hover {
+  color: #792626;
+}
 body {
-  font-family: 'Georgia';
+  font-family: "Droid Serif", Georgia, Serif;
   background-color: #faf9f0;
-  color: #444;
+  background-image: url("/images/bg.png");
+  color: #393d38;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
 }
 header {
   font-family: 'Quicksand';
@@ -24,58 +47,54 @@ header {
    * Note the use of the `main-color`
    * variable and the `darken` function
    */
-  background-color: #fa5b4d;
-  border-bottom: 1px solid #df1806;
-  text-shadow: 0px -1px 0px #df1806;
+  background-color: #4faadb;
+  text-shadow: 0px -1px 0px #144763;
+}
+.section {
+  position: relative;
+  width: 100%;
+}
+.section .dribble {
+  background: #f57945;
+}
+.section .about {
+  background: #8f7065;
+}
+.section .contact {
+  background: #68b560;
 }
 .container {
-  width: 500px;
-  margin: 50px auto;
+  width: 100%;
   overflow: hidden;
 }
-.main-content {
-  float: left;
-  width: 300px;
+.content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgba(255,255,255,0.1);
 }
-.main-content p {
-  margin-bottom: 20px;
+.content ul#portfolio {
+  width: 750px;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
 }
-.sidebar {
+.content ul#portfolio li {
   float: left;
+  margin: 20px;
+}
+.content ul#portfolio a {
+  display: block;
   width: 200px;
-}
-.sidebar .widget {
-/*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  margin-left: 20px;
-  background-color: #faf9f0;
-  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
-}
-.sidebar .widget h1 {
-  font-family: 'Quicksand';
-  margin: 13px 10px 4px;
-  padding-bottom: 10px;
-  border-bottom: 1px dotted #ddd;
-  border-radius: 2px 2px 0px 0px;
-  margin-bottom: 10px;
-}
-.sidebar .widget p {
-  font-size: 13px;
-  padding: 0px 10px;
-  margin-bottom: 10px;
-}
-p {
-  line-height: 1.8;
+  height: 150px;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
 footer {
-  width: 500px;
-  margin: 50px auto;
+  background-color: #393d38;
+  color: #fff;
   border-top: 1px dotted #ccc;
-  padding-top: 5px;
+  padding: 10px;
   font-size: 13px;
+  margin-bottom: 0px;
 }
