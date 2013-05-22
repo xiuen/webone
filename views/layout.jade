@@ -1,15 +1,34 @@
 !!!5
 html
   head
-    title #{title} - Title
+
+    title webone
+
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Droid+Serif')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js')
+    script(src='javascripts/jribbble.js')
+    script(src='javascripts/script.js')
+
   body
     header
-      h1 Title
-    .container
-      .main-content
-        block content
-      .sidebar
-        block sidebar
+      h1 noob website
+    
+    .container 
+      .section
+
+        .dribble
+         .content
+            block content
+     
+        .about
+          .content
+            block about
+
+        .contact
+          .content
+            block contact
+
     footer
       p Running on node with Express, Jade and Stylus
+      div Copyright © xiuen #{+new Date().getFullYear()} 
